@@ -171,6 +171,7 @@ const Dashboard = () => {
             alignItems={"center"}
             paddingX={2}
             pt={2}
+            mb={1}
           >
             <Typography
               fontSize={"28px"}
@@ -179,7 +180,7 @@ const Dashboard = () => {
               color="#ccc"
             >
               {" "}
-              Your Repositories{" "}
+              Your Repositories
             </Typography>
             <TextField
               fullWidth
@@ -206,7 +207,7 @@ const Dashboard = () => {
 
           <Divider
             sx={{
-              bgcolor: "#aaa",
+              bgcolor: "rgb(20, 25, 33) ",
             }}
           />
           <Box padding={2}>
@@ -334,7 +335,9 @@ const Dashboard = () => {
                           pb: 0.5,
                         }}
                       >
-                        <Typography variant="body1">{repoName}</Typography>
+                        <Typography variant="body1" color="#ccc">
+                          {repoName}
+                        </Typography>
                       </Box>
 
                       {openRepos[repoName] ? (
@@ -377,7 +380,10 @@ const Dashboard = () => {
                                   marginRight: 10,
                                 }}
                               />
-                              <ListItemText primary={branch.name} />
+                              <ListItemText
+                                primary={branch.name}
+                                color="#ccc"
+                              />
                             </ListItem>
                           ))
                         ) : (
