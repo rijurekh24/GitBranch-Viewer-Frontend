@@ -98,7 +98,7 @@ const Dashboard = () => {
 
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:5000/auth/logout", {
+      await fetch("https://gitbranch-viewer-backend.onrender.com/auth/logout", {
         credentials: "include",
       });
       setUser(null);

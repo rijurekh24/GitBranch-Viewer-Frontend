@@ -7,7 +7,9 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/auth/user", { credentials: "include" })
+    fetch("https://gitbranch-viewer-backend.onrender.com/auth/user", {
+      credentials: "include",
+    })
       .then((res) => res.json())
       .then((data) => {
         if (data.isAuthenticated) {

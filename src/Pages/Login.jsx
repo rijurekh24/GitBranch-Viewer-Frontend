@@ -24,7 +24,8 @@ const Login = () => {
 
   const handleLogin = () => {
     setLoading(true);
-    window.location.href = "http://localhost:5000/auth/github";
+    window.location.href =
+      "https://gitbranch-viewer-backend.onrender.com/auth/github";
   };
 
   return (
